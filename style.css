@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--black);
+  color: white;
+}
+:root {
+  --orange: hsla(11, 85%, 59%, 1);
+  --black: hsla(229, 7%, 13%, 1);
+}
+
+
+header {
+  display: flex;
+  background-color: var(--black);
+  padding: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header a{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--orange);
+  font-size: 1em;
+}
+header a:hover {
+  opacity: .9;
+  transition: .5s;
+}
+header img {
+  min-width: 160px;
+  max-width: 20vw;
+}
+
+main {
+  padding: .2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+main h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--orange);
+}
+main p,
+ label {
+  font-size: .8rem;
+}
+
+.card label {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--orange);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  font-weight: bold;
+}
+.card p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 220px;
+  border: 1px solid var(--orange);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card{
+  display: flex;
+  padding: .1rem;
+}
+
+.card svg {
+  width: 18px;
+  height: 18px;
+  
+}
+
+.card span {
+  border-left: 1px solid var(--orange);
+  padding-left: .5rem;
+  height: 18px;
+}
+.card span:hover svg {
+  fill: white;
+  cursor: pointer;
+}
+
+.check {
+  transition: opacity 0.5s ease;
+  color: var(--orange);
+  justify-content: center;
+}
+#notepad{
+  display:block;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 12px;
+  background-color: var(--black);
+  min-height: 280px;
+  max-height: 80vh;
+  border: 1px solid var(--orange);
+  padding: 10px;
+  resize: vertical;
+  overflow-y: auto;
+  color: white;
+  border-radius: 3px;
+}
+#save-btn{
+  margin-top: 10px;
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+}
+
+#save-btn:hover {
+  color: #000;
+  border: 1px solid black;
+  transition: .3s in-out;
+}
+
+
+
+@media (min-width: 768px) {
+  
+}

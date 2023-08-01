@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PlusSoft - Suporte</title>
+</head>
+<body>
+  <header>
+    <img src="assets/logo_plussoft_letra_branca.png" alt="Logo tipo da PlusSoft">
+    <!-- <nav>
+      <a href="#telefones">Telefones</a>
+      <a href="#links">Links</a>
+      <a href="#">Tutoriais</a>
+    </nav> -->
+  </header>
+
+  <main>
+    <section id="telefones">
+      <h2>
+        Telefones
+      </h2>
+      <div class="card">
+        <label>Administrativo</label>
+        <p id="adm"> (82) 99984-8410
+          <span onclick="copy('adm')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2F00" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></span>
+        </p>
+      </div>
+      <div class="card">
+        <label>WhatsApp</label>
+        <p id="whats"> (82) 99685-2019
+          <span onclick="copy('whats')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2F00" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></span>
+        </p>
+
+      </div>
+      <div class="card">
+        <label>Central</label>
+        <p id="central">(82) 3142-0867
+          <span onclick="copy('central')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2F00" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></span>
+        </p>
+
+      </div>
+    </section>
+    <section id="links">
+      <h2>Links</h2>
+      <div class="card">
+        <label>SQL</label>
+        <p id="sql">bit.ly/plussoft_sql
+          <span onclick="copy('sql')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2F00" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></span>
+        </p>
+
+      </div>
+      <div class="card">
+        <label>Shop9</label>
+        <p id="s9">bit.ly/plussoft_s9
+          <span onclick="copy('s9')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2F00" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></span>
+        </p>
+
+      </div>
+      <div class="card">
+        <label>Impressoras</label>
+        <p id="impressoras">bit.ly/plussoft_impressoras
+          <span onclick="copy('impressoras')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2F00" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></span>
+        </p>
+      </div>
+    </section>
+    <section id="bloco">
+      <h2>Bloco de Notas</h2>
+      <textarea name="notepad" id="notepad" cols="50" autocomplete="on" spellcheck="true"></textarea>
+      <button id="save-btn">Salvar</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
