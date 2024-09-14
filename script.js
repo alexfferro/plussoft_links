@@ -1,6 +1,11 @@
-function copy(id) {
-    const texto = document.getElementById(`${id}`).value;
-    navigator.clipboard.writeText(texto)
+function copyPhone(id) {
+    const input = document.getElementById(`${id}`);
+    const legend = input.parentNode.innerText
+    navigator.clipboard.writeText(`${legend} - ${input.value}`)
+  }
+  function copyLinks(id) {
+    const input = document.getElementById(`${id}`).value
+    navigator.clipboard.writeText(input)
   }
   
   function saveNote(){
@@ -19,22 +24,12 @@ function copy(id) {
 
   function showModal() {
     var modal = document.getElementById("myModal");
-    modal.style.display = "block";  // Exibe o modal
-
-    // Fecha o modal quando clicar no "x"
-    var closeModal = document.getElementsByClassName("close")[0];
-    closeModal.onclick = function() {
+    modal.style.display = "block"; // Mostra o modal
+    // Fecha o modal automaticamente após 1 segundo
+    setTimeout(function() {
         modal.style.display = "none";
-    };
-
-    // Fecha o modal se clicar fora da área do modal
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
+    }, 500); // 1000ms = 1 segundo
 }
-
 // Adiciona o evento de clique a todos os botões que possuem a classe 'open-modal-btn'
 var buttons = document.querySelectorAll(".open-modal-btn");
 buttons.forEach(function(button) {

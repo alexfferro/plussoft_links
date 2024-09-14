@@ -24,22 +24,26 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 624px;
+  max-width: 925px;
   margin: auto;
   padding: 1rem;
   text-align: center;
 }
 
 #container header img {
-  width: 50%;
+  max-width: 300px;
 }
 
-#links form{
+
+#phone form, #links form{
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-#links fieldset{
+#phone fieldset, #links fieldset{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,24 +52,24 @@ body {
   padding: 6px;
   text-align: left;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
 }
-#links legend {
+#phone legend, #links legend {
   padding-inline: 6px;
 }
 
-#links input {
+#phone input,  #links input {
   text-align: center;
   background: none;
   border: none;
   outline: none;
   color: white;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
 }
 
-#links fieldset:hover {
-  border: 1px solid var(--orange);
+#phone fieldset:hover, #links fieldset:hover {
+  border: 1px solid var(--orange);;
   color: var(--orange);
   input {
     color: var(--orange);
@@ -73,47 +77,31 @@ body {
 }
 
 
-        /* Estilos para o modal */
-        .modal {
-          display: none; /* Inicialmente escondido */
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.4); /* Fundo semitransparente */
-      }
+/* Estilos para o modal */
+.modal {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: all 0.2s ease;
+}
 
-      /* Estilos para o conteúdo do modal */
-      .modal-content {
-          background-color: rgba(255, 255, 255, 0.01);
-          margin: 15% auto;
-          padding: 20px;
-          border: 1px solid #888;
-          width: 80%;
-          max-width: 300px; /* Largura máxima para o modal */
-          text-align: center;
-          border-radius: 8px;
-      }
+/* Estilos para o conteúdo do modal */
+.modal-content {
+  margin: 20% auto;
+  padding: 10px;
+  border: 1px solid var(--orange);
+  width: 80%;
+  max-width: 200px; /* Largura máxima para o modal */
+  border-radius: 6px;
+  text-align: center;
+}
 
-      /* Estilo para o texto de sucesso */
-      .success-message {
-          color: #4CAF50;
-          font-size: 1.2em;
-          font-weight: bold;
-      }
-
-      /* Estilo para o botão de fechar */
-      .close {
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
-          cursor: pointer;
-      }
-
-      .close:hover,
-      .close:focus {
-          color: black;
-      }
+/* Estilo para o texto de sucesso */
+.success-message {
+  color: var(--orange);
+}

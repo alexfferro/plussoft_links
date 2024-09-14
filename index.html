@@ -14,21 +14,45 @@
     <header>
       <img src="assets/logo_plussoft_letra_branca.png">
     </header>
-    <div id="links">
+    <div id="phone">
       <form>
-          <fieldset onclick="copy('adm')">
-            <legend for="adm">Administrativo</legend>
-            <input type="text" id="adm" name="adm" value="(82) 99984-8410" readonly class="open-modal-btn">
-          </fieldset>
-        <fieldset onclick="copy('whats')">
+        <fieldset onclick="copyPhone('adm')">
+          <legend for="adm">Administrativo</legend>
+          <input type="text" id="adm" name="adm" value="(82) 99984-8410" readonly class="open-modal-btn">
+        </fieldset>
+        <fieldset onclick="copyPhone('whats')">
           <legend for="adm">WhatsApp</legend>
           <input type="text" id="whats" name="whats" value="(82) 99685-2019" readonly class="open-modal-btn">
-      </fieldset>
+          </fieldset>
+        <fieldset onclick="copyPhone('central')">
+          <legend for="adm">Central</legend>
+          <input type="text" id="central" name="central" value="(82) 3142-0867" readonly class="open-modal-btn">
+        </fieldset>
+        <fieldset onclick="copyPhone('cenmatica')">
+          <legend for="adm">Cenmatica</legend>
+          <input type="text" id="cenmatica" name="cenmatica" value="(82) 99649-6051" readonly class="open-modal-btn">
+        </fieldset>
       </form>
     </div>
+    <div id="links">
+      <form>
+        <fieldset onclick="copyLinks('SQL')">
+          <legend> SQL </legend>
+          <input type="text" id="SQL" name="SQL" value="bit.ly/plussoft_sql" readonly class="open-modal-btn">
+        </fieldset>
+        <fieldset onclick="copyLinks('s9')">
+          <legend> Shop9 </legend>
+          <input type="text" id="s9" name="s9" value="bit.ly/plussoft_s9" readonly class="open-modal-btn">
+        </fieldset>
+        <fieldset onclick="copyLinks('impressoras')">
+          <legend> Impressoras </legend>
+          <input type="text" id="impressoras" name="impressoras" value="bit.ly/plussoft_impressoras" readonly class="open-modal-btn">
+        </fieldset>
+      </form>
+    </div>
+    
     <div id="myModal" class="modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
           <p class="success-message">Copiado com sucesso!</p>
       </div>
   </div>
